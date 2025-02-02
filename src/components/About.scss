@@ -1,0 +1,102 @@
+.about {
+  padding: 4rem 2rem;
+  text-align: left;
+  margin-left: 60px;
+  color: white;
+
+  h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: white;
+  }
+
+  p {
+    text-align: left;
+    font-size: 1.2rem;
+    max-width: 800px;
+    
+    color: white;
+  }
+
+  h3 {
+    font-size: 1.8rem;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    color: white;
+  }
+
+  ul {
+    list-style-type: none;
+    padding-left: 20px;
+
+    li {
+      position: relative;
+      margin-bottom: 10px;
+
+      &::before {
+        content: '';
+        position: absolute;
+        left: -20px;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 8px;
+        height: 8px;
+        background-color: #f39c12;
+        border-radius: 50%;
+      }
+
+      strong {
+        font-weight: 600;
+      }
+    }
+  }
+
+  // Media Query for responsiveness
+  @media (max-width: 768px) {
+    padding: 3rem 1rem; // Reduced padding for smaller screens
+
+    h2 {
+      font-size: 2rem; // Smaller heading on mobile
+    }
+
+    p {
+      font-size: 1rem; // Adjust paragraph text size
+    }
+
+    h3 {
+      font-size: 1.5rem; // Adjust subheading size
+    }
+
+    ul {
+      padding-left: 15px; // Reduced padding on mobile
+    }
+
+    li {
+      font-size: 1rem; // Slightly smaller font size for list items
+    }
+  }
+
+  @media (max-width: 480px) {
+    padding: 2rem 0.5rem; // Even more reduced padding for very small screens
+
+    h2 {
+      font-size: 1.8rem; // Further reduced heading size
+    }
+
+    p {
+      font-size: 0.9rem; // Further adjusted text size
+    }
+
+    h3 {
+      font-size: 1.3rem; // Further reduced subheading size
+    }
+
+    ul {
+      padding-left: 10px; // Even more reduced padding for very small screens
+    }
+
+    li {
+      font-size: 0.9rem; // Smaller font size for list items on very small screens
+    }
+  }
+}
