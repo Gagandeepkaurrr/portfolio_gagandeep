@@ -33,6 +33,7 @@ const About = () => {
       <ul>
         <li>Linkedin: <a href='https://www.linkedin.com/in/gagandeep-kaur-5bba75298?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app'>Click Here!</a></li>
         <li>GitHub: <a href='https://github.com/Gagandeepkaurrr'>Click Here!</a></li>
+        <li>Email: gagandeepp1401@gmail.com</li>
       </ul>
     </section>
   );
